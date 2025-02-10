@@ -155,6 +155,7 @@ var BannerVars = []string{
 	"PLATFORM_VERSION",
 	"MATRIXX_BUILD_INFO",
 	"MATRIXX_MAINTAINER",
+	"MATRIXX_RELEASE_CODE",
 	"PRODUCT_SOURCE_ROOT_DIRS",
 	"TARGET_DEVICE",
 	"TARGET_BUILD_VARIANT",
@@ -196,6 +197,7 @@ func Banner(config Config, make_vars map[string]string) string {
 		fmt.Fprintln(b, "        Project-Matrixx by Team-Matrixx                     ")
 		fmt.Fprintln(b, "============================================================")
 		fmt.Fprintf(b, "%s=%s\n", "MATRIXX_BUILD_INFO", make_vars["MATRIXX_BUILD_INFO"])
+		fmt.Fprintf(b, "%s=%s\n", "MATRIXX_RELEASE_CODE", make_vars["MATRIXX_RELEASE_CODE"])
 		fmt.Fprintf(b, "%s=%s\n", "PLATFORM_VERSION", make_vars["PLATFORM_VERSION"])
 		fmt.Fprintf(b, "%s=%s\n", "TARGET_DEVICE", make_vars["TARGET_DEVICE"])
 		fmt.Fprintf(b, "%s=%s\n", "TARGET_BUILD_VARIANT", make_vars["TARGET_BUILD_VARIANT"])
