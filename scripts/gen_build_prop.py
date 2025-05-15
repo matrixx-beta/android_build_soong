@@ -247,7 +247,7 @@ def generate_build_info(args):
   print(f"ro.build.flavor={config['BuildFlavor']}")
 
   print(f"ro.lineage.device={config['LineageDevice']}")
-  print(f"ro.crdroid.device={config['LineageDevice']}")
+  print(f"ro.matrixx.device={config['LineageDevice']}")
 
   # These values are deprecated, use "ro.product.cpu.abilist"
   # instead (see below).
